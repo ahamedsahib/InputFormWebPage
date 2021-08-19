@@ -37,3 +37,13 @@ phone.addEventListener("input", function () {
     else
         phoneError.textContent='Invalid Phone Number';
 });
+
+var password = document.querySelector("#pwd");
+const passwordError = document.querySelector("#pwdError");
+password.addEventListener("input", function () {
+    let passwordPattern =/^(?=.{8,}$)(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$/;
+    if(passwordPattern.test(password.value))
+        passwordError.textContent='';
+    else
+        passwordError.textContent='Invalid Password';
+});
