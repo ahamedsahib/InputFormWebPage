@@ -18,4 +18,12 @@ output.textContent = salary.value;
 salary.addEventListener("input", function () {
     output.textContent = salary.value;
 });
-
+var email = document.querySelector("#email");
+const emailError = document.querySelector("#emailError");
+email.addEventListener("input", function () {
+    let emailPattern = /^[a-z]+([+.-_]{1}\w+)?@[a-z0-9]+\.[a-z]{2,3}(\.[a-z]{2})?$/;
+    if(emailPattern.test(email.value))
+        emailError.textContent='';
+    else
+        emailError.textContent='Invalid Email Id';
+});
