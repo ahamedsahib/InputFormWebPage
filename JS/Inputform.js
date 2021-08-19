@@ -27,3 +27,13 @@ email.addEventListener("input", function () {
     else
         emailError.textContent='Invalid Email Id';
 });
+
+var phone = document.querySelector("#phone");
+const phoneError = document.querySelector("#phoneError");
+phone.addEventListener("input", function () {
+    let phonePattern = RegExp("[0-9]{1,2}[ ][0-9]{10}$");
+    if(phonePattern.test(phone.value))
+        phoneError.textContent='';
+    else
+        phoneError.textContent='Invalid Phone Number';
+});
