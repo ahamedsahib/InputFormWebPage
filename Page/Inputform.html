@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input Form</title>
+        <link rel="stylesheet" href="../Css/inputform.css">
+    </head>
+    <body>
+        <header class="header">INPUT FORM</header>
+        <form class='formcontent'>
+            <div class="form">
+            <div class="row">
+                <label class="label" for="name">Name:</label>
+                <input class="input"type="text" id="name" required placeholder="Enter your Name" />
+                <span id="name"></span>
+              </div>
+              <div class="row">
+                <label class="label" for="pwd">Password:</label>
+                <input class="input" type="password" id="pwd" required placeholder="Enter your Password" />
+                <span id="pwd"></span>
+              </div>
+              <div class="row">
+                <label class="label" for="email">Email Id:</label>
+                <input class="input" type="email" id="email" required placeholder="Enter your Email" />
+                <span id="email"></span>
+              </div>
+              <div class="row">
+                <label class="label" for="url">URL:</label>
+                <input class="input" type="url" id="url" required placeholder="Site URL" />
+              </div>
+              <div class="row">
+                <label class="label" for="phone">Phone:</label>
+                <input class="input" type="tel" id="phone" required placeholder="Contact Number" />
+                <span id="phone"></span>
+              </div>
+              <div  class="row">
+                <label class="label" for="search">Search Input:</label>
+                <input class="input" type="search" id="search" required placeholder="Search" />
+              </div>
+              <div class="row">
+                <label class="label" for="date">BirthDate:</label>
+                <input class="input" type="date" required id="date" style="width: 25%;" />
+              </div>
+              <div class="row">
+                <label class="label" for="salary">Salary:</label>
+                <input class="input" type="range" id="salary" min="30000" max="50000"step="100"value="40000" required>
+                <output id="salary" for="salary">40000</output>
+              </div>
+              <div>
+                <button>Submit</button>
+              </div>
+            </div>
+        </form>
+    </body>
+</html>
