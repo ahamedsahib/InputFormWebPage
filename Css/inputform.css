@@ -27,7 +27,7 @@ body{
 }
 .label{
     padding: 10px;
-    min-width: 150px;
+    min-width: 120px;
     font-size: 20px;
 }
 .row{
@@ -57,4 +57,18 @@ button{
 }
 span{
     color: red;
+}
+@media only screen and (max-width: 400px) {
+    .label
+    {
+        font-size: 14px;
+        min-width: 70px;
+        
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .form
+    {
+        max-width: 90%;
+    }
 }
